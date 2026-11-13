@@ -1,7 +1,5 @@
 # CNC Transporte — Gestão de cargas
 
-Frontend Angular 20 standalone para o backend Java existente. Inclui package.json, configuração Angular, TypeScript, proxy, PWA, telas e testes. Não precisa executar `ng new`.
-
 ## Executar no Windows
 1. Inicie seu backend Java em **http://localhost:8081**. O proxy de desenvolvimento já está configurado para essa porta; se ela mudar, altere `target` em `proxy.conf.json`.
 2. Abra **http://localhost:4200**. Sem o Java, a tela mostra API indisponível — não inventa registros.
