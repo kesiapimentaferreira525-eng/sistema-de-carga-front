@@ -3,15 +3,8 @@
 Frontend Angular 20 standalone para o backend Java existente. Inclui package.json, configuração Angular, TypeScript, proxy, PWA, telas e testes. Não precisa executar `ng new`.
 
 ## Executar no Windows
-1. Instale Node.js **22.12 ou superior** (ou Node 20.19+).
-2. Extraia o ZIP. Abra o terminal **dentro de `cargas-front`**, onde está o `package.json`:
-   ```powershell
-   cd C:\caminho\cargas-front
-   npm install
-   npm start
-   ```
-3. Inicie seu backend Java em **http://localhost:8081**. O proxy de desenvolvimento já está configurado para essa porta; se ela mudar, altere `target` em `proxy.conf.json`.
-4. Abra **http://localhost:4200**. Sem o Java, a tela mostra API indisponível — não inventa registros.
+1. Inicie seu backend Java em **http://localhost:8081**. O proxy de desenvolvimento já está configurado para essa porta; se ela mudar, altere `target` em `proxy.conf.json`.
+2. Abra **http://localhost:4200**. Sem o Java, a tela mostra API indisponível — não inventa registros.
 
 ## Telas
 - Painel: total faturado, pendente, volumes separados por unidade e últimas cargas; atualização a cada minuto enquanto aberto.
