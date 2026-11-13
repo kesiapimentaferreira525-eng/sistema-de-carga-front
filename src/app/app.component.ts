@@ -1,0 +1,6 @@
+import { Component } from '@angular/core';
+import { RouterOutlet,RouterLink,RouterLinkActive } from '@angular/router';
+@Component({selector:'app-root',standalone:true,imports:[RouterOutlet,RouterLink,RouterLinkActive],template:`
+<header class="topbar no-print"><a class="brand" routerLink="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><path d="M3 9.5h15a1.5 1.5 0 0 1 1.5 1.5v3h4.2l4.3 4.8V24h-2.7a4 4 0 0 1-7.6 0h-6.8a4 4 0 0 1-7.6 0H2V11a1.5 1.5 0 0 1 1-1.5Zm16.5 7v4h6v-1.1L22.4 16h-2.9ZM7.1 22a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6Zm14.4 0a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6Z"/></svg></span><span class="brand-name">CNC TRANSPORTE<small>GESTÃO OPERACIONAL</small></span></a><span class="top-label">Operação &amp; financeiro</span></header>
+<div class="layout"><nav class="sidebar no-print" aria-label="Navegação principal"><span class="nav-label">GESTÃO</span><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">◫ <span>Painel geral</span></a><a routerLink="/cargas" routerLinkActive="active">▤ <span>Diário de cargas</span></a><a routerLink="/faturas" routerLinkActive="active">▧ <span>Faturas</span></a><div class="sidebar-foot">Operação & financeiro</div></nav><main><router-outlet /></main></div>`})
+export class AppComponent {}

@@ -1,0 +1,13 @@
+import 'zone.js';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { provideHttpClient } from '@angular/common/http';
+import { provideRouter } from '@angular/router';
+import { provideServiceWorker } from '@angular/service-worker';
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
+import { LOCALE_ID, provideZoneChangeDetection } from '@angular/core';
+import { AppComponent } from './app/app.component';
+import { routes } from './app/app.routes';
+import { environment } from './environments/environment';
+registerLocaleData(localePt);
+bootstrapApplication(AppComponent,{providers:[provideZoneChangeDetection({eventCoalescing:true}),provideHttpClient(),provideRouter(routes),{provide:LOCALE_ID,useValue:'pt-BR'},provideServiceWorker('ngsw-worker.js',{enabled:environment.production,registrationStrategy:'registerWhenStable:30000'})]}).catch(console.error);
